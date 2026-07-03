@@ -1,0 +1,686 @@
+.header {
+
+  display: none !important;
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  height: 25px;
+}
+
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+#triggerImage{
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.dialog-profile-box{
+  width: 420px;
+  padding: 13px 18px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 4000;
+}
+
+/* Fade-in effect */
+.visible {
+  display: block;
+  opacity: 1;
+}
+
+.profile-image{
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  object-fit: cover;
+}
+
+.dialog-profile-text{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; 
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.paragraph-about-text{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal; 
+  margin-bottom: 8px;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-links-text-discription{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; 
+}
+
+.social-media-links-handle{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  .middle-section{
+    display: none;
+  }
+}
+
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-icon {
+  height: 25px;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+}
+
+.voice-search-icon {
+  height: 24px;
+}
+
+.right-section {
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.upload-icon {
+  height: 24px;
+}
+
+.youtube-apps-icon {
+  height: 24px;
+}
+
+.notifications-icon {
+  height: 24px;
+}
+
+.notifications-icon-container {
+  position: relative;
+}
+
+.notifications-count {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
+
+.current-user-picture {
+  height: 32px;
+  border-radius: 16px;
+  margin-left: 16px;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1;
+}
+
+
+.osaro-goodness-explore-container{
+  position: relative;
+  width: auto;
+  height: 100vh;
+  background-size: cover;
+}
+
+.image-explore-osarogoodness{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.container-top-navigation-links{
+  background-color: rgba(3, 3, 31, 0.836);
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-bottom: 60px;
+}
+
+.nav-link-footer{
+  color: white;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 20px 36px;
+  transition: 0.5s;
+}
+
+.nav-link-footer:hover{
+  background-color: white;
+  color: rgb(1, 1, 26);
+  transition: 0.5s;
+}
+
+.navigation-button-a{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.close-footer-icon-btn{
+  text-align: end;
+  color: rgb(4, 5, 54);
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px !important;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.close-footer-icon-btn:hover{
+  color: white;
+  background-color: rgba(2, 2, 24, 0.918);
+}
+
+.first-footer-nav{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+
+.flex-container-explore-content-nested{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.829);
+  width: auto;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 60px;
+  position: relative;
+}
+
+.social-accounts-flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.social-accounts-flex-column a{
+  color: white;
+  font-size: 30px;
+  margin-bottom: 16px !important;
+}
+
+.content-osaro-goodness-explore{
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.line-content{
+  width: 120px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.text-unto-osas-goody{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+.feild-discription-osas{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+}
+
+.text-explanation-explore{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: rgb(243, 243, 243);
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.text-explanation-parag{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.arrow-icon-explore{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+.btn-explore-osaro{
+  background-color: rgb(13, 13, 218);
+  padding: 14px 20px;
+  border: none;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+#js-slide-container {
+  transition: top 0.5s ease-in-out;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+
+  overflow-y: auto; /* Enable vertical scrolling */
+  z-index: 5000;
+}
+
+
+.container-nested-osaro-goodness{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container-newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.sign-up-head-text-footer{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 36px;
+  text-transform: capitalize;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-element-container{
+  margin: 70px 0;
+}
+
+.text-convince-signup{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.input-footer-news-letter{
+  background: transparent;
+  border: none;
+  border: 1px solid rgb(177, 171, 171);
+  padding: 10px 7px;
+  width: 400px;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 15px 0;
+}
+
+.input-bar-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.footer-subcribe-btn{
+  padding: 12.9px 19px;
+  border: none;
+  color: white;
+  background-color: rgb(6, 6, 65);
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.display-nav-footer-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.paragraph-links-footer-navs{
+  color: white;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.contributor-page-navs{
+  color: white;
+}
+
+.link-page-nav-foot{
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.link-page-nav-foot:hover{
+  text-decoration: underline;
+}
+
+.text-about-my-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-footer-end-discription{
+  color: white;
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: 14.4932px;
+  width: 70%;
+}
+
+.social-content-osas-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.break-query{
+  display: none;
+}
+
+/* query styles for dropdown footer menu */
+
+@media (max-width: 940px) {
+  .container-nested-osaro-goodness{
+    flex-direction: column;
+  }
+
+  .about-me-footer-elements-flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .margin-query-1{
+    margin-right: 20px;
+  }
+
+  .display-nav-footer-links{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .flex-container-explore-content-nested{
+    padding: 50px 20px;
+  }
+
+  .break-query{
+    display: block;
+  }
+
+  .input-bar-footer{
+    flex-direction: column;
+  }
+
+  .input-footer-news-letter{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-me-footer-elements-flex{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .social-accounts-flex-column{
+    margin-right: 25px;
+  }
+
+  .content-osaro-goodness-explore{
+    margin-right: 10px;
+  }
+
+  .input-footer-news-letter,
+  .input-bar-footer{
+    width: 100%;
+  }
+}
+
+/* top Link nav bar queries styles */
+@media (max-width: 600px) {
+  .nav-link-footer{
+    padding: 20px 20px;
+  }
+
+  .close-footer-icon-btn{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 490px) {
+  .nav-link-footer{
+    padding: 14px 14px;
+  }
+
+  .close-footer-icon-btn{
+    margin-left: 13px;
+    margin-right: 7px;
+  }
+}

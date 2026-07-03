@@ -1,0 +1,1534 @@
+::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(197, 171, 171);
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(226, 219, 219);
+}
+
+.hidden-overflow{
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    width: auto;
+    height: 400px; /* Fixed height */
+    overflow: hidden;
+    padding: 20px 30px;
+  }
+  
+  
+  .slider {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .image-slide-osas-goody{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide:nth-child(1) {
+    transform: translateX(100%);
+  }
+  .slide:nth-child(2) {
+    transform: translateY(-100%);
+  }
+  .slide:nth-child(3) {
+    transform: translateY(100%);
+  }
+  .slide:nth-child(4) {
+    transform: translateX(-100%);
+  }
+  
+  .slide.active:nth-child(1) {
+    transform: translateX(0);
+  }
+  .slide.active:nth-child(2) {
+    transform: translateY(0);
+  }
+  .slide.active:nth-child(3) {
+    transform: translateY(0);
+  }
+  .slide.active:nth-child(4) {
+    transform: translateX(0);
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-slider {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .btn-slider:hover {
+    background-color: #555;
+  }
+  
+  .content-absolute-slide-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(3, 3, 32, 0.904);
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: color 1s ease;
+  }
+
+.slide-text-my-name{
+    font-family: "Orbitron", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+    text-transform: uppercase;
+}  
+
+.content-osas-goody-slide{
+    width: 500px;
+    transition: 0.5s;
+}
+
+.littlex-text-osas-goody{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.icons-social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.icons-social-media a{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+/* Styling for the span elements */
+.span-o-animate {
+    display: inline-block;
+    transition: transform 1s ease;
+  }
+  
+  /* Hover effect on h2 container */
+  .content-absolute-slide-in:hover .span-o-animate {
+    transform: scaleX(2.0); /* Stretch horizontally */
+    margin: 0 26px;
+    color: rgb(99, 99, 121);
+    font-weight: 500;
+  }
+
+.slide-job-request{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(3, 3, 32, 0.904);
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.btn-contact-slide{
+    background-color: orange;
+    padding: 14px 19px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    border: none;
+    transition: 0.5s;
+}
+
+.btn-contact-slide:hover{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+
+
+
+
+.object-cyber-punk {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 40px 0;
+    margin-top: 0;
+}
+
+
+.object-live-game {
+    position: relative;
+    width: 50%;
+    height: 330px;
+    margin: 0 10px;
+    opacity: 0;
+    background-color: gray;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.lscale00 {
+    width: 90%;
+    transform: scale(1.2);
+    z-index: 1;
+    background-color: gray;
+    position: relative;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.object-live-game img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+
+.slide-1-absolute:hover{
+    background-color: rgba(0, 0, 0, 0.849);
+    transition: 0.5s;
+}
+
+.content-slide{
+    width: 50%;
+}
+
+
+.head-text-slide-1{
+    color: rgb(235, 234, 234);
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.display-text-slide-1{
+    color: rgb(240, 240, 240);
+    text-align: start;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.details-btn-slide-1{
+    border: none;
+    color: rgb(250, 242, 228);
+    background-color: rgba(37, 2, 2, 0.692);
+    border-radius: 3.5px;
+    padding: 10px 10px;
+    margin-top: 6px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.svg-play-icon-btn{
+    width: 17px !important;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: center;
+    padding: 0;
+}
+
+.parent-container-center-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.top-stream-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.download-game-btn{
+    background-color: rgb(4, 4, 87);
+    border: none;
+    padding: 14px 22px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+.container-center-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 61%;
+    justify-content: center;
+}
+
+.container-community-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nested-flex-image{
+    flex-grow: 1;
+    margin-bottom: 30px;
+    margin-right: 22px;
+}
+
+.nesletter-subscription-image{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+}
+
+.form-container-flex{
+    width: 270px;
+    margin-bottom: 25px;
+}
+
+.text-subcribe-head-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;   
+    margin-top: 0;
+}
+
+.input-element{
+    border-radius: 6px;
+    padding: 5px 12px;
+    text-align: start;
+    margin-bottom: 9px;
+    width: 200px;
+    border: none;
+    border: 2px solid rgb(7, 7, 190);
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.subscribe-btn-community{
+    background-color: rgb(4, 4, 87);
+    border: none;
+    border-radius: 4px;   
+    color: rgb(238, 235, 235);
+    padding: 8px 14px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+.child-container-hint{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+    padding: 33px;
+}
+
+.head-text-hint-discription{
+    text-align: center;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    margin: 0;
+}
+
+.container-hint{
+    padding: 14px 16px;
+    background-color: rgb(213, 240, 240);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 2);
+    border-radius: 4px;
+}
+
+.head-text-hint{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    margin: 4.5px;
+}
+
+.text-paragraph-hint{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    font-size: 11px;
+}
+
+.hint-container1-image{
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.hint-container2{
+    background-color: rgb(224, 220, 220); 
+}
+
+
+
+.objective-head-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    width: auto;
+    text-align: center;
+}
+
+.first-grid-container-objectives{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 98px;
+    row-gap: 56.553px;
+}
+
+.object-container1{
+    height: 340px;
+}
+
+.nested-objective-container{
+    padding: 12px 19px;
+    background-color: rgb(207, 207, 207);
+    position: relative;
+}
+
+.object-container2{
+    height: 250px;
+}
+
+.objective-space{
+    background-color: gray;
+    padding: 4px 8px;
+    border-radius: 9px;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 9.5px;
+}
+
+.objective-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 4px;
+}
+
+.plus-icon-objective{
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(4, 4, 87);
+    color: white !important;
+    position: absolute;
+    right: 24px;
+    bottom: 23px;
+    font-size: 24px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+}
+
+#gridtesting{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 29px;
+    row-gap: 20px;
+    margin: 30px;
+    grid-template-areas: 
+    "con1 con2 con3"
+    "con1 con2 con3"
+    "con1 con5 con3"
+    "con1 con5 con3"
+    "con4 con5 con6"
+    "con4 con5 con6";
+}
+
+#gridtesting > *{
+    position: relative;
+    background: #e7e7e7;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 2);
+}
+
+.objective-container1{
+    grid-area: con1;
+}
+
+.objective-container2{
+    grid-area: con2;
+}
+
+.objective-container3{
+    grid-area: con3;
+}
+
+.objective-container4{
+    grid-area: con5;
+}
+
+.objective-container5{
+    grid-area: con4;
+}
+
+.objective-container6{
+    grid-area: con6;
+}
+
+.image-objectives{
+    height: 235.443px;
+    object-fit: cover;
+}
+
+.head-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-view-more{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.head-name-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.selling-game-parent-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.selling-game-child-container{
+    padding: 13px 14px;
+    margin-top: 8px;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.selling-game-child-container img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.game-name{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.game-categories{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.purchase-button{
+    padding: 5px 9px;
+    background-color: rgb(194, 186, 186);
+    color: rgb(0, 0, 0);
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    border: none;
+    border-radius: 4px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.grid-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.collection-container{
+    position: relative;
+    height: 210px;
+}
+
+.collection-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.thumbnail{
+    height: 171.125px;
+    object-fit: cover;
+}
+
+.absolute-container-collection{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 22, 0.747);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.absolute-container-collection:hover{
+    background-color: rgba(1, 1, 22, 0.884);
+}
+
+.collection-name{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.project-box{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.element-content-container{
+    padding: 0px 50px;
+}
+
+.box-game-project-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.game-project-paragraph{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 18px;
+}
+
+.learn-about-osas-goody-container{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 120px !important;
+    background-color: white;
+    padding: 30px 38px;
+    border-radius: 17px; 
+}
+
+
+.profile-container{
+    padding: 5px 20px;
+}
+
+.learn-head-text,
+.learn-paragraph-text,
+.learn-link-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.job-parent-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 5px 20px;
+    flex-grow: 1;
+}
+
+.box-profile-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .box-profile-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.profile-nested-container{
+    padding: 14px 19px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 9px;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.profile-nested-container:hover{
+    transform: scale(1.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-job-category-discription{
+    display: none;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    font-size: 13px;
+}
+
+.profile-nested-container:hover .text-job-category-discription{
+    display: block;
+}
+
+.profile-icon{
+    text-align: center;
+    background-color: rgb(24, 153, 153);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.profile-icon .bi{
+    color: white;
+}
+
+.profile-space-name{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;   
+}
+
+
+.paragraph-link-contact{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+}
+
+.grid-container-social-apps{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+.image-container-media{
+    padding: 22px 39px;
+    background-color: rgb(172, 193, 211);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.social-account-information{
+    padding: 17px 10px;
+    background-color: rgb(223, 219, 219);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.social-account-name{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    margin-bottom: 16px;
+}
+
+.media-information{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    font-size: 11px;
+}
+
+.information-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media-action-btn{
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    cursor: pointer;
+}
+
+.social-media-image-icon{
+    width: 100%;
+}
+
+.media-container1{
+    background-color: rgb(248, 215, 214);
+}
+
+.media-container2{
+    background-color: rgb(228, 231, 232);
+}
+
+.media-container3{
+    background-color: rgb(219, 235, 251);
+}
+
+.media-container4{
+    background-color: rgb(211, 204, 204);
+}
+
+.media-container5{
+    background-color: antiquewhite;
+}
+
+.game-chart-osas-goody{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-box-gaming-chat{
+    width: 500px;
+}
+
+.grid-game-chart{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-grow: 1;
+}
+
+.content-chart-head-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal; 
+    margin-bottom: 6px;
+}
+
+.paragraph-chart-text{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;    
+}
+
+
+.chart-btn-purchase{
+    background-color: rgb(255, 208, 0);
+}
+
+.btn-link-game-chart{
+    background-color: rgb(255, 208, 0);
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;   
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.container-chart-game{
+    position: relative;
+}
+
+.absolute-position-chart-number{
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 42px;
+}
+
+.home-navigation-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* styles for work show case container and content */
+.container-work-show-case{
+    background-color: rgb(30, 29, 28);
+    border: 2px solid rgb(39, 39, 39);
+    position: relative;
+    margin: 120px 120px;
+    border-radius: 13px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.container-work-show-case:hover{
+    transform: scale(0.9);
+}
+
+.content-display-work-show{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.inline-heading-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-paragraph-work{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    color: white;
+}
+
+.icon-chart-me{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.work-title-head-text{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 9px;
+}
+
+.paragraph-show-case-work{
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; 
+    color: rgb(255, 255, 255);
+}
+
+.text-container-show{
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+
+.container-web-development-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+    position: relative;
+}
+
+.image-web-preview{
+    width: 80%;
+}
+
+.mobile-web-preview{
+    width: 40%;
+}
+
+.tablet-web-preview{
+    width: 60%;
+}
+
+.nested-container-webs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+}
+
+
+.absolute-discription-preview{
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding-left: 70px;
+    padding-right: 70px;
+    border: none;
+    background-color: rgb(113, 113, 122, 0.61);
+    color: white;
+    bottom: 0; /* Initially hidden outside the view */
+    transform: translateY(100%); /* Hidden below the image */
+  transition: transform 0.5s ease; /* Smooth sliding animation */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+}
+
+
+.text-display-preview{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nested-container-webs:hover .absolute-discription-preview{
+    transform: translateY(0); /* Slide up into view */
+}
+
+
+.container-icon-preview{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-preview-work{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(113, 113, 122, 0.61);
+    margin-left: 13px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+}
+
+.down-grid-project{
+    margin-top: 0;
+}
+
+.work-text-showcase{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgb(248, 248, 248);
+    z-index: 8000 !important;
+}
+
+
+
+/* First content container displaying you are on to Osas Goody */
+@media (max-width: 1300px) {
+    .learn-about-osas-goody-container{
+        margin: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .learn-about-osas-goody-container{
+        margin: 40px 12px;
+    }
+
+    .element-content-container{
+        padding-right: 0;
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .learn-about-osas-goody-container{
+        flex-direction: column;
+    }
+    .profile-container{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box-profile-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .learn-about-osas-goody-container{
+        padding: 30px 8px;
+    }
+}
+
+/* Media query for the element display join my live gaming session */
+@media (max-width: 600px) {
+    .content-slide{
+        width: 80%;
+    }
+}
+
+/* Media query for the element container stream all lives games with a button */
+@media (max-width: 830px) {
+    .container-center-text{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-center-text{
+        width: 90% !important;
+    }
+}
+
+/* Media query for the container display image and a subcribe form */
+@media (max-width: 700px) {
+    .container-community-form{
+        flex-direction: column;
+    }
+
+    .nested-flex-image{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .nesletter-subscription-image{
+        width: 100%;
+    }
+
+    .form-container-flex{
+        width: 100%;
+    }
+}
+
+/* Media query for media box reviewing my gaming website */
+@media (max-width: 1000px) {
+    .project-box{
+        margin-bottom: 30px;
+    }
+
+    .project-box img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 790px) {
+    .project-box{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-box img{
+        width: 100%;
+    }
+}
+
+/* Query for up coming hints container */
+@media (max-width: 900px) {
+    .child-container-hint{
+        grid-gap: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 750px) {
+    .child-container-hint{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media query for best selling game-container */
+@media (max-width: 1250px) {
+    .selling-game-parent-container{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .query-display-none{
+        display: none;
+    }   
+}
+
+@media (max-width: 1010px) {
+    .selling-game-parent-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .display-none{
+        display: none;
+    }
+}
+
+@media (max-width: 860px) {
+    .selling-game-parent-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .query-display-none,
+    .display-none{
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .selling-game-parent-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 490px) {
+    .selling-game-parent-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Query for collection category */
+@media (max-width: 1000px) {
+    .colection-display-none-query{
+        display: none;
+    }
+
+    .grid-collection{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 750px) {
+    .grid-collection{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .colection-display-none-query{
+        display: block;
+    }
+}
+
+@media (max-width: 650px) {
+    .grid-collection{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Media query styles for social media links navigations */
+@media (max-width: 1000px) {
+    .grid-container-social-apps{
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .grid-container-social-apps{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width: 750px) {
+    .grid-container-social-apps{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 530px) {
+    .grid-container-social-apps{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* query css styles for top game chart */
+@media (max-width: 990px) {
+    .game-child-query-none{
+        display: none;
+    }
+
+    .grid-game-chart{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .game-chart-osas-goody{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .game-child-query-none{
+        display: block;
+    }
+
+    .grid-game-chart{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-game-chart{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .home-chart img{
+        height: 450px;
+    }
+
+    .game-name{
+        font-size: 25px;
+    }
+
+    .absolute-position-chart-number{
+        font-size: 60px;
+    }
+
+    .text-box-gaming-chat{
+        width: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .dialog-profile-box{
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    main{
+        margin-bottom: 90px;
+    }
+}
+
+
+
+/* styles to create a responsive container for my work showcase  */
+@media (max-width: 1200px) {
+    .container-work-show-case{
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-work-show-case{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .controler-query-style{
+        height: 260px;
+    }
+
+    .web-template-img-1,
+    .tablet-game-dsgn-img{
+        width: 380px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content-display-work-show{
+        flex-direction: column;
+    }
+
+    .text-container-show{
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-work-show-case{
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .image-work-show-case{
+        width: 90%;
+        margin: 12px !important;
+        height: auto !important;
+    }
+
+    .paragraph-show-case-work{
+        display: none;
+    }
+    
+    .container-work-show-case{
+        margin-right: 14px;
+        margin-left: 14px;
+    }
+
+    .text-container-show{
+        padding: 10px;
+        padding-bottom: 18px;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .icon-chat-me-query{
+        position: absolute;
+        bottom: 30px;
+        right: 26px;
+        background-color: rgba(79, 79, 117, 0.767);
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 2);
+    }
+}
+
+/* styles for container displaying all recent works */
+
+@media (max-width: 800px) {
+    .container-web-development-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nested-dis-none-queries{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .mobile-web-preview{
+        width: 80%;
+    }
+
+    .image-web-preview,
+    .image-design-01{
+        width: 100%;
+    }
+}
+
+@media (max-width: 470px) {
+    .mobile-web-preview{
+        width: 100%;
+    }
+}
