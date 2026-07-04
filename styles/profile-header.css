@@ -154,4 +154,24 @@
       display: none;
     }
   }
+
+
+  @media (max-width: 1160px) {
+    .dropdown-menu{
+        right: 0 !important;
+    }
+}
+
+  @media (max-width: 500px) {
+    .dropdown-menu{
+        right: 0 !important;
+        top: 110px;
+    }
+}
+
+  @media (max-width: 500px) {
+    .user-details h2{
+      font-size: 22px;
+    }
+}
   

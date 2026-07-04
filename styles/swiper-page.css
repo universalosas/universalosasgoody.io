@@ -1171,6 +1171,20 @@ object-fit: cover;
     }
 }
 
+@media (max-width: 800px) {
+    .learn-about-osas-goody-container{
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .learn-about-osas-goody-container{
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+}
+
 @media (max-width: 600px) {
     .box-profile-container{
         grid-template-columns: repeat(1, 1fr);
@@ -1530,5 +1544,12 @@ object-fit: cover;
 @media (max-width: 470px) {
     .mobile-web-preview{
         width: 100%;
+    }
+}
+
+
+@media (max-with: 1160px) {
+    .dropdown-menu{
+        right: 0;
     }
 }
