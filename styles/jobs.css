@@ -620,3 +620,20 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
+
+  .none{display: none;}
+
+  @media (max-width: 500px) {
+    .contact-email{
+      display: none;
+    }
+
+    .none{display: contents;}
+  }
+
+  @media (max-width: 450px) {
+    #roles{
+      padding-right: 8px !important;
+      padding-left: 8px !important;
+    }
+  }
